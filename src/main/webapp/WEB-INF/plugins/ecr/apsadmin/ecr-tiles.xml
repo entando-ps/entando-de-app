@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- ********* INIZIO Area Gestione Contenuti ********* -->
+
+    <definition extends="layout.default" name="admin.ecr.intro">
+        <put-attribute name="title" value="title.ecrManagement" />
+        <put-attribute name="body" value="/WEB-INF/plugins/ecr/apsadmin/jsp/ecr/ecrIntro.jsp" />
+    </definition>
+        
+</tiles-definitions>
