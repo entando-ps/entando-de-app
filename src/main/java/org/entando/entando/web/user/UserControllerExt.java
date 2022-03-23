@@ -38,7 +38,7 @@ public class UserControllerExt {
     @Autowired
     private IUserService userService;
 
-    @GetMapping("/users/myGroupPermissions")
+    @GetMapping("/userProfiles/myGroupPermissions")
     public ResponseEntity<SimpleRestResponse<List<UserGroupPermissions>>> getMyGroupPermissions(HttpServletRequest request) {
         UserDetails userDetails = HttpSessionHelper.extractCurrentUser(request);
         List<UserGroupPermissions> currentUserPermissions = this.userService.getMyGroupPermissions(userDetails);
