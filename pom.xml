@@ -30,6 +30,16 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>e7</id>
+            <url>https://github.com/eugeniosant/eN7-repo/raw/repository</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
     <properties>
         <!-- COMPONENTS -->
@@ -408,6 +418,17 @@
             <version>7.0.0-SNAPSHOT</version>
             <type>jar</type>
             <classifier>classes</classifier>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.entando</groupId>
+            <artifactId>entando7-rb-lib</artifactId>
+            <version>7.0.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.entando.components</groupId>
+            <artifactId>entando7-de-app-integration</artifactId>
+            <version>7.0.0.0</version>
         </dependency>
 
     </dependencies>
