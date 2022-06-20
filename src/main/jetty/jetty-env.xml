@@ -234,27 +234,6 @@
             </New>
         </Arg>
     </New>
-    <New id="dataObjectCache" class="org.eclipse.jetty.plus.jndi.Resource">
-        <Arg>dataObjectCache</Arg>
-        <Arg>
-            <New class="java.util.concurrent.ConcurrentHashMap">
-            </New>
-        </Arg>
-    </New>
-    <New id="dataObjectModelCache" class="org.eclipse.jetty.plus.jndi.Resource">
-        <Arg>dataObjectModelCache</Arg>
-        <Arg>
-            <New class="java.util.concurrent.ConcurrentHashMap">
-            </New>
-        </Arg>
-    </New>
-    <New id="widgetTypeCache" class="org.eclipse.jetty.plus.jndi.Resource">
-        <Arg>dataObjectMapperCache</Arg>
-        <Arg>
-            <New class="java.util.concurrent.ConcurrentHashMap">
-            </New>
-        </Arg>
-    </New>
     <New id="jacmsContentManagerCache" class="org.eclipse.jetty.plus.jndi.Resource">
         <Arg>jacmsContentManagerCache</Arg>
         <Arg>
