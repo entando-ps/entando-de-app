@@ -262,4 +262,11 @@
             </New>
         </Arg>
     </New>
+    <New id="tenantCache" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>tenantCache</Arg>
+        <Arg>
+            <New class="java.util.concurrent.ConcurrentHashMap">
+            </New>
+        </Arg>
+    </New>
 </Configure>
