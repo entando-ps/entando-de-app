@@ -36,7 +36,9 @@
         <entando-admin-console.version>6.5.0-MT</entando-admin-console.version>
         <entando-portal-ui.version>6.5.0-MT</entando-portal-ui.version>
         <entando-plugin-jacms.version>6.5.0-MT</entando-plugin-jacms.version>
+<!--
         <entando-plugin-jpmail.version>6.5.0</entando-plugin-jpmail.version>
+-->
         <entando-plugin-jpversioning.version>6.5.0</entando-plugin-jpversioning.version>
         <entando-plugin-jpseo.version>6.5.0-MT</entando-plugin-jpseo.version>
         <entando-plugin-jpredis.version>6.5.0-MT</entando-plugin-jpredis.version>
@@ -179,7 +181,7 @@
                 <type>war</type>
             </dependency>
             <!--jpmail-->
-            <dependency>
+<!--            <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
                 <artifactId>entando-plugin-jpmail</artifactId>
                 <version>${entando-plugin-jpmail.version}</version>
@@ -190,7 +192,7 @@
                 <artifactId>entando-plugin-jpmail</artifactId>
                 <version>${entando-plugin-jpmail.version}</version>
                 <type>war</type>
-            </dependency>
+            </dependency>-->
             <!--jpversioning-->
             <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
@@ -277,11 +279,11 @@
             <artifactId>entando-plugin-jacms</artifactId>
             <classifier>classes</classifier>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpmail</artifactId>
             <classifier>classes</classifier>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpversioning</artifactId>
@@ -423,11 +425,11 @@
                 <artifactId>entando-plugin-jacms</artifactId>
                 <type>war</type>
             </dependency>
-            <dependency>
+<!--            <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
                 <artifactId>entando-plugin-jpmail</artifactId>
                 <type>war</type>
-            </dependency>
+            </dependency>-->
             <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
                 <artifactId>entando-plugin-jpseo</artifactId>
@@ -1150,10 +1152,10 @@
                             <groupId>org.entando.entando.plugins</groupId>
                             <artifactId>entando-plugin-jacms</artifactId>
                         </overlay>
-                        <overlay>
+<!--                        <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
                             <artifactId>entando-plugin-jpmail</artifactId>
-                        </overlay>
+                        </overlay>-->
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
                             <artifactId>entando-plugin-jpseo</artifactId>
