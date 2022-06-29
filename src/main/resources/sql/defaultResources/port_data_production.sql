@@ -214,7 +214,7 @@ INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) V
 <@jacms.contentList listName="contentList" contentType="NWS" />
 <@wp.currentPage param="code" var="currentPageCode" />
 <@wp.freemarkerTemplateParameter var="currentPageCode" valueName="currentPageCode" />
-<link rel="stylesheet" type="text/css" href="<@wp.resourceURL />ootb-widgets/static/css/sitemap.css">
+<link rel="stylesheet" type="text/css" href="<@wp.resourceURL ignoreTenant=true  />ootb-widgets/static/css/sitemap.css">
 
 <div class="well well-small sitemap">
 <h2>Sitemap</h2>
@@ -287,10 +287,10 @@ ${previousPage.title}</a>
 ',1);
 
 INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('entando_ootb_carbon_include',NULL,NULL,NULL,'<#assign wp=JspTaglibs["/aps-core"]>
-<script src="<@wp.resourceURL />ootb-widgets/static/js/2.ootb.chunk.js" nonce="<@wp.cspNonce />"></script>
-<script src="<@wp.resourceURL />ootb-widgets/static/js/main.ootb.chunk.js" nonce="<@wp.cspNonce />"></script>
-<script src="<@wp.resourceURL />ootb-widgets/static/js/runtime-main.ootb.js" nonce="<@wp.cspNonce />"></script>
-<link href="<@wp.resourceURL />ootb-widgets/static/css/main.ootb.chunk.css" rel="stylesheet">
+<script src="<@wp.resourceURL ignoreTenant=true  />ootb-widgets/static/js/2.ootb.chunk.js" nonce="<@wp.cspNonce />"></script>
+<script src="<@wp.resourceURL ignoreTenant=true  />ootb-widgets/static/js/main.ootb.chunk.js" nonce="<@wp.cspNonce />"></script>
+<script src="<@wp.resourceURL ignoreTenant=true  />ootb-widgets/static/js/runtime-main.ootb.js" nonce="<@wp.cspNonce />"></script>
+<link href="<@wp.resourceURL ignoreTenant=true  />ootb-widgets/static/css/main.ootb.chunk.css" rel="stylesheet">
 ',1);
 
 INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('1-column','1 Column','<?xml version="1.0" encoding="UTF-8"?>
@@ -349,7 +349,7 @@ INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('1-col
         <meta name="viewport" content="width=device-width,  user-scalable=no" />
         <link rel="icon" href="${appUrl}favicon.png" type="image/png" />
         <!-- Custom OOTB page template styles -->
-        <link rel="stylesheet" href="<@wp.resourceURL />static/css/ootb/page-templates/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="<@wp.resourceURL ignoreTenant=true  />static/css/ootb/page-templates/index.css" rel="stylesheet">
         <!-- Carbon Design System -->
         <@wp.fragment code="entando_ootb_carbon_include" escapeXml=false />
         <@wp.fragment code="keycloak_auth" escapeXml=false />
@@ -450,7 +450,7 @@ INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('1-2x4
         <meta name="viewport" content="width=device-width,  user-scalable=no" />
         <link rel="icon" href="${appUrl}favicon.png" type="image/png" />
         <!-- Custom OOTB page template styles -->
-        <link rel="stylesheet" href="<@wp.resourceURL />static/css/ootb/page-templates/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="<@wp.resourceURL ignoreTenant=true  />static/css/ootb/page-templates/index.css" rel="stylesheet">
         <!-- Carbon Design System -->
         <@wp.fragment code="entando_ootb_carbon_include" escapeXml=false />
         <@wp.fragment code="keycloak_auth" escapeXml=false />
@@ -565,7 +565,7 @@ INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('1-2-c
         <meta name="viewport" content="width=device-width,  user-scalable=no" />
         <link rel="icon" href="${appUrl}favicon.png" type="image/png" />
         <!-- Custom OOTB page template styles -->
-        <link rel="stylesheet" href="<@wp.resourceURL />static/css/ootb/page-templates/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="<@wp.resourceURL ignoreTenant=true  />static/css/ootb/page-templates/index.css" rel="stylesheet">
         <!-- Carbon Design System -->
         <@wp.fragment code="entando_ootb_carbon_include" escapeXml=false />
         <@wp.fragment code="keycloak_auth" escapeXml=false />
@@ -669,7 +669,7 @@ INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('1-2x2
         <meta name="viewport" content="width=device-width,  user-scalable=no" />
         <link rel="icon" href="${appUrl}favicon.png" type="image/png" />
         <!-- Custom OOTB page template styles -->
-        <link rel="stylesheet" href="<@wp.resourceURL />static/css/ootb/page-templates/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="<@wp.resourceURL ignoreTenant=true  />static/css/ootb/page-templates/index.css" rel="stylesheet">
         <!-- Carbon Design System -->
         <@wp.fragment code="entando_ootb_carbon_include" escapeXml=false />
         <@wp.fragment code="keycloak_auth" escapeXml=false />
@@ -766,7 +766,7 @@ INSERT INTO pagemodels (code,descr,frames,plugincode,templategui) VALUES ('conte
         <meta name="viewport" content="width=device-width,  user-scalable=no" />
         <link rel="icon" href="${appUrl}favicon.png" type="image/png" />
         <!-- Custom OOTB page template styles -->
-        <link rel="stylesheet" href="<@wp.resourceURL />static/css/ootb/page-templates/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="<@wp.resourceURL ignoreTenant=true  />static/css/ootb/page-templates/index.css" rel="stylesheet">
         <!-- Carbon Design System -->
         <@wp.fragment code="entando_ootb_carbon_include" escapeXml=false />
         <@wp.fragment code="keycloak_auth" escapeXml=false />
