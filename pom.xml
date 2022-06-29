@@ -6,7 +6,7 @@
     <artifactId>entando-de-app</artifactId>
     <packaging>war</packaging>
     <version>6.5.0-MT</version>
-    <name>entando-de-app</name>
+    <name>entando-de-app MT</name>
     <url>http://www.entando.com/</url>
     <licenses>
         <license>
@@ -41,6 +41,7 @@
         <entando-plugin-jpseo.version>6.5.0-MT</entando-plugin-jpseo.version>
         <entando-plugin-jpredis.version>6.5.0-MT</entando-plugin-jpredis.version>
         <entando.keycloak.plugin.version>6.5.0-MT</entando.keycloak.plugin.version>
+        <entando-plugin-jpcds.version>6.5.0-MT</entando-plugin-jpcds.version>
         <!--
     <test.database.driver>org.postgresql.Driver</test.database.driver>
     <test.database.hostname>localhost</test.database.hostname>
@@ -240,6 +241,19 @@
                 <artifactId>entando-keycloak-auth</artifactId>
                 <version>${entando.keycloak.plugin.version}</version>
             </dependency>
+            
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpcds</artifactId>
+                <version>${entando-plugin-jpcds.version}</version>
+                <classifier>classes</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpcds</artifactId>
+                <version>${entando-plugin-jpcds.version}</version>
+                <type>war</type>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -287,6 +301,13 @@
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-keycloak-auth</artifactId>
         </dependency>
+        
+        <dependency>
+            <groupId>org.entando.entando.plugins</groupId>
+            <artifactId>entando-plugin-jpcds</artifactId>
+            <classifier>classes</classifier>
+        </dependency>
+        
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
@@ -422,6 +443,14 @@
                 <artifactId>entando-plugin-jpversioning</artifactId>
                 <type>war</type>
             </dependency>
+
+        
+        <dependency>
+            <groupId>org.entando.entando.plugins</groupId>
+            <artifactId>entando-plugin-jpcds</artifactId>
+                <type>war</type>
+        </dependency>
+        
         <!-- test dependencies -->
         <dependency>
             <groupId>org.entando.entando</groupId>
@@ -1136,6 +1165,10 @@
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
                             <artifactId>entando-plugin-jpversioning</artifactId>
+                        </overlay>
+                        <overlay>
+                            <groupId>org.entando.entando.plugins</groupId>
+                            <artifactId>entando-plugin-jpcds</artifactId>
                         </overlay>
                     </overlays>
                 </configuration>
