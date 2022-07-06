@@ -40,6 +40,7 @@
         <entando-plugin-jpversioning.version>6.5.0</entando-plugin-jpversioning.version>
         <entando-plugin-jpseo.version>6.5.0-MT</entando-plugin-jpseo.version>
         <entando-plugin-jpredis.version>6.5.0-MT</entando-plugin-jpredis.version>
+        <entando-plugin-jpsolr.version>6.5.0-MT</entando-plugin-jpsolr.version>
         <entando.keycloak.plugin.version>6.5.0-MT</entando.keycloak.plugin.version>
         <entando-plugin-jpcds.version>6.5.0-MT</entando-plugin-jpcds.version>
         <!--
@@ -235,6 +236,18 @@
                 <version>${entando-plugin-jpredis.version}</version>
                 <type>war</type>
             </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpsolr</artifactId>
+                <version>${entando-plugin-jpsolr.version}</version>
+                <classifier>classes</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpsolr</artifactId>
+                <version>${entando-plugin-jpsolr.version}</version>
+                <type>war</type>
+            </dependency>
             <!--keycloak-->
             <dependency>
                 <groupId>org.entando.entando</groupId>
@@ -295,6 +308,11 @@
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpredis</artifactId>
+            <classifier>classes</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.entando.entando.plugins</groupId>
+            <artifactId>entando-plugin-jpsolr</artifactId>
             <classifier>classes</classifier>
         </dependency>
         <dependency>
@@ -436,6 +454,11 @@
             <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
                 <artifactId>entando-plugin-jpredis</artifactId>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpsolr</artifactId>
                 <type>war</type>
             </dependency>
             <dependency>
@@ -1161,6 +1184,10 @@
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
                             <artifactId>entando-plugin-jpredis</artifactId>
+                        </overlay>
+                        <overlay>
+                            <groupId>org.entando.entando.plugins</groupId>
+                            <artifactId>entando-plugin-jpsolr</artifactId>
                         </overlay>
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>

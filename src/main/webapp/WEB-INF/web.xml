@@ -17,6 +17,7 @@
             classpath*:spring/plugins/**/apsadmin/**/**.xml
             classpath*:spring/aps/managers/keycloak.xml
             classpath*:spring/aps/managers/cors.xml
+            classpath*:spring/plugins/jpsolr/aps/baseManagersConfig.xml
         </param-value>
     </context-param>
     <context-param>
