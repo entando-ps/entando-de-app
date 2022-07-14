@@ -102,6 +102,8 @@
         <cors.access.control.maxAge>3600</cors.access.control.maxAge>
         <log4j.version>2.17.1</log4j.version>
         <struts2.version>2.5.30</struts2.version>
+
+        <spring-session-data-redis.version>2.6.0</spring-session-data-redis.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -254,7 +256,7 @@
                 <artifactId>entando-keycloak-auth</artifactId>
                 <version>${entando.keycloak.plugin.version}</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
                 <artifactId>entando-plugin-jpcds</artifactId>
@@ -319,13 +321,13 @@
             <groupId>org.entando.entando</groupId>
             <artifactId>entando-keycloak-auth</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpcds</artifactId>
             <classifier>classes</classifier>
         </dependency>
-        
+
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
@@ -351,7 +353,7 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
         </dependency>
-        
+
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
@@ -467,18 +469,18 @@
                 <type>war</type>
             </dependency>
 
-        
+
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpcds</artifactId>
                 <type>war</type>
         </dependency>
-        
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
         </dependency>
-        
+
         <!-- test dependencies -->
         <dependency>
             <groupId>org.entando.entando</groupId>
@@ -515,6 +517,38 @@
             <groupId>org.apache.derby</groupId>
             <artifactId>derbyclient</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--TOMCAT START-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!--        TOMCAT END-->
+
+        <!-- Spring session -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+            <version>${spring-session-data-redis.version}</version>
         </dependency>
 
     </dependencies>
