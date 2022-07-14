@@ -101,7 +101,9 @@
         <cors.access.control.allow.methods>GET, POST, PUT, DELETE, OPTIONS, PATCH</cors.access.control.allow.methods>
         <cors.access.control.allow.credentials>true</cors.access.control.allow.credentials>
         <cors.access.control.maxAge>3600</cors.access.control.maxAge>
-        <log4j.version>2.17.0</log4j.version>
+        <log4j.version>2.17.1</log4j.version>
+
+        <spring-session-data-redis.version>2.6.0</spring-session-data-redis.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -405,7 +407,7 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
         </dependency>
-        
+
         <!-- test dependencies -->
         <dependency>
             <groupId>org.entando.entando</groupId>
@@ -444,17 +446,38 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- TODO: move this to entando-core-parent in next release -->
+        <!--TOMCAT START-->
         <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-ws-policy</artifactId>
-            <version>3.4.4</version>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-wsdl</artifactId>
-            <version>3.4.4</version>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!--        TOMCAT END-->
+
+        <!-- Spring session -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+            <version>${spring-session-data-redis.version}</version>
+        </dependency>
+
     </dependencies>
 
     <profiles>
