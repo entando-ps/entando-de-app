@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="${entando.web.context}" docBase="./${entando.web.context}" debug="0" reloadable="false" cacheMaxSize="${static.resources.cache}" cacheObjectMaxSize="750" cachingAllowed="true">
+    <Environment name="applicationBaseURL" value="http://localhost:8080/${entando.web.context}" type="java.lang.String" override="false" />
+    <Environment name="resourceRootURL" value="${resourceRootURL}" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceRootURL" value="${protectedResourceRootURL}" type="java.lang.String" override="false" />
+    <Environment name="cmsResourceRootURL" value="${cmsResourceRootURL}" type="java.lang.String" override="false" />
+    <Environment name="resourceDiskRootFolder" value="/entando-data/resources" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceDiskRootFolder" value="/entando-data/protected" type="java.lang.String" override="false" />
+    <Environment name="indexDiskRootFolder" value="/entando-data/indexdir" type="java.lang.String" override="false" />
+    <Environment name="portDataSourceClassName" value="${portdb.driverClassName}" type="java.lang.String" override="false" />
+    <Environment name="servDataSourceClassName" value="${servdb.driverClassName}" type="java.lang.String" override="false" />
+
+    <Resource name="jdbc/portDataSource" auth="Container"
+              type="javax.sql.DataSource" driverClassName="${portdb.driverClassName}"
+              maxTotal="100" maxIdle="2" maxWaitMillis="20000"
+              username="${portdb.username}" password="${portdb.password}"
+              url="${portdb.url}" />
+    <Resource name="jdbc/servDataSource" auth="Container"
+              type="javax.sql.DataSource" driverClassName="${servdb.driverClassName}"
+              maxTotal="100" maxIdle="2" maxWaitMillis="20000"
+              username="${servdb.username}" password="${servdb.password}"
+              url="${servdb.url}" />
+
+</Context>
