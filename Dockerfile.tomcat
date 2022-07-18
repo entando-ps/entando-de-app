@@ -1,4 +1,4 @@
-FROM entando/entando-base-tomcat:9.0.64
+FROM entando/entando-base-tomcat:9
 #FROM entando/entando-base-tomcat:tomcat-9-comca-tracing
 
 ARG context_path
