@@ -35,6 +35,13 @@ docker build . -f Dockerfile.wildfly -t <YOUR-USER>/<YOUR-REPO-NAME>:<YOUR-VERSI
 docker build --no-cache -t <YOUR-USER>/<YOUR-REPO-NAME>:<YOUR-VERSION> -f Dockerfile.tomcat --build-arg context_path=entando-de-app .
 ```
 
+**To make it work the tomcat image needs two env vars specifying the DB driver to be used (postgresql, mysql, oracle)**
+
+```bash
+PORTDB_DRIVER = (postgresql|mysql|oracle)
+SERVDB_DRIVER = (postgresql|mysql|oracle)
+```
+
 # Deploying to Kubernetes
 Clone the repository
 Change the project name to your preferred project name. From your favourite IDE
