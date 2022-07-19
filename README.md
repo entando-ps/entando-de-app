@@ -60,6 +60,13 @@ Use the scripts inside the `upgrade` folder to upgrade your Entando database fro
 
 Starting from version 7.0.0 Entando uses Liquibase, a tool that handle database changes, so you will not need to run any manual queries to upgrade your database from versions higher than 7.0.0.
 
+**To make it work the tomcat image needs two env vars specifying the DB driver to be used (postgresql, mysql, oracle)**
+
+```bash
+PORTDB_DRIVER = (postgresql|mysql|oracle)
+SERVDB_DRIVER = (postgresql|mysql|oracle)
+```
+
 # Deploying to Kubernetes
 Clone the repository
 Change the project name to your preferred project name. From your favourite IDE
