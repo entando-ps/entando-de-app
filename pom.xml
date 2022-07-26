@@ -43,6 +43,7 @@
         <entando-plugin-jpsolr.version>6.5.0-MT</entando-plugin-jpsolr.version>
         <entando.keycloak.plugin.version>6.5.0-MT</entando.keycloak.plugin.version>
         <entando-plugin-jpcds.version>6.5.0-MT</entando-plugin-jpcds.version>
+        <entando-plugin-jpactionlogger.version>6.5.0-MT</entando-plugin-jpactionlogger.version>
         <!--
     <test.database.driver>org.postgresql.Driver</test.database.driver>
     <test.database.hostname>localhost</test.database.hostname>
@@ -250,6 +251,18 @@
                 <version>${entando-plugin-jpsolr.version}</version>
                 <type>war</type>
             </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpactionlogger</artifactId>
+                <version>${entando-plugin-jpactionlogger.version}</version>
+                <classifier>classes</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpactionlogger</artifactId>
+                <version>${entando-plugin-jpactionlogger.version}</version>
+                <type>war</type>
+            </dependency>
             <!--keycloak-->
             <dependency>
                 <groupId>org.entando.entando</groupId>
@@ -315,6 +328,11 @@
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpsolr</artifactId>
+            <classifier>classes</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.entando.entando.plugins</groupId>
+            <artifactId>entando-plugin-jpactionlogger</artifactId>
             <classifier>classes</classifier>
         </dependency>
         <dependency>
@@ -461,6 +479,11 @@
             <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
                 <artifactId>entando-plugin-jpsolr</artifactId>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpactionlogger</artifactId>
                 <type>war</type>
             </dependency>
             <dependency>
@@ -1222,6 +1245,10 @@
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
                             <artifactId>entando-plugin-jpsolr</artifactId>
+                        </overlay>
+                        <overlay>
+                            <groupId>org.entando.entando.plugins</groupId>
+                            <artifactId>entando-plugin-jpactionlogger</artifactId>
                         </overlay>
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
