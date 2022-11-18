@@ -6,7 +6,7 @@
     <artifactId>entando-de-app</artifactId>
     <packaging>war</packaging>
     <version>7.1.1</version>
-    <name>entando-de-app</name>
+    <name>entando-de-app MT 7.1.1</name>
     <url>http://www.entando.com/</url>
     <licenses>
         <license>
@@ -34,15 +34,16 @@
     <properties>
         <!-- COMPONENTS -->
         <entando-core-parent.version>7.1.0</entando-core-parent.version>
-        <entando-admin-console.version>7.1.1</entando-admin-console.version>
-        <entando-engine.version>7.1.1</entando-engine.version>
-        <entando-portal-ui.version>7.1.1</entando-portal-ui.version>
-        <entando-keycloak-plugin.version>7.1.0</entando-keycloak-plugin.version>
-        <entando-plugin-jacms.version>7.1.1</entando-plugin-jacms.version>
+        <entando-admin-console.version>7.1.1-MT</entando-admin-console.version>
+        <entando-engine.version>7.1.1-MT</entando-engine.version>
+        <entando-portal-ui.version>7.1.1-MT</entando-portal-ui.version>
+        <entando-keycloak-plugin.version>7.1.1-MT</entando-keycloak-plugin.version>
+        <entando-plugin-jacms.version>7.1.1-MT</entando-plugin-jacms.version>
         <entando-plugin-jpmail.version>7.1.0</entando-plugin-jpmail.version>
-        <entando-plugin-jpredis.version>7.1.0</entando-plugin-jpredis.version>
-        <entando-plugin-jpseo.version>7.1.1</entando-plugin-jpseo.version>
+        <entando-plugin-jpredis.version>7.1.1-MT</entando-plugin-jpredis.version>
+        <entando-plugin-jpseo.version>7.1.1-MT</entando-plugin-jpseo.version>
         <entando-plugin-jpversioning.version>7.1.0</entando-plugin-jpversioning.version>
+        <entando-plugin-jpsolr.version>7.1.1-MT</entando-plugin-jpsolr.version>
         
         <!-- SONAR -->
         <github.organization>entando</github.organization>
@@ -234,6 +235,18 @@
                 <version>${entando-plugin-jpredis.version}</version>
                 <type>war</type>
             </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpsolr</artifactId>
+                <version>${entando-plugin-jpsolr.version}</version>
+                <classifier>classes</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpsolr</artifactId>
+                <version>${entando-plugin-jpsolr.version}</version>
+                <type>war</type>
+            </dependency>
             <!--keycloak-->
             <dependency>
                 <groupId>org.entando.entando</groupId>
@@ -281,6 +294,11 @@
         <dependency>
             <groupId>org.entando.entando.plugins</groupId>
             <artifactId>entando-plugin-jpredis</artifactId>
+            <classifier>classes</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.entando.entando.plugins</groupId>
+            <artifactId>entando-plugin-jpsolr</artifactId>
             <classifier>classes</classifier>
         </dependency>
         <dependency>
@@ -345,6 +363,11 @@
             <dependency>
                 <groupId>org.entando.entando.plugins</groupId>
                 <artifactId>entando-plugin-jpredis</artifactId>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>org.entando.entando.plugins</groupId>
+                <artifactId>entando-plugin-jpsolr</artifactId>
                 <type>war</type>
             </dependency>
             <dependency>
@@ -1009,6 +1032,10 @@
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
                             <artifactId>entando-plugin-jpredis</artifactId>
+                        </overlay>
+                        <overlay>
+                            <groupId>org.entando.entando.plugins</groupId>
+                            <artifactId>entando-plugin-jpsolr</artifactId>
                         </overlay>
                         <overlay>
                             <groupId>org.entando.entando.plugins</groupId>
