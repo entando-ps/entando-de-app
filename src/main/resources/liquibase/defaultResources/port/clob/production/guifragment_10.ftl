@@ -3,7 +3,7 @@
 <@jacms.contentList listName="contentList" contentType="NWS" />
 <@wp.currentPage param="code" var="currentPageCode" />
 <@wp.freemarkerTemplateParameter var="currentPageCode" valueName="currentPageCode" />
-<link rel="stylesheet" type="text/css" href="<@wp.resourceURL />ootb-widgets/static/css/sitemap.css">
+<link rel="stylesheet" type="text/css" href="<@wp.resourceURL ignoreTenant=true />ootb-widgets/static/css/sitemap.css">
 
 <div class="well well-small sitemap">
 <h2>Sitemap</h2>

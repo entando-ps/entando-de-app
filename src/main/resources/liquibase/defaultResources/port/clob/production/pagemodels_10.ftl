@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width,  user-scalable=no" />
         <link rel="icon" href="${appUrl}favicon.png" type="image/png" />
         <!-- Custom OOTB page template styles -->
-        <link rel="stylesheet" href="<@wp.resourceURL />static/css/ootb/page-templates/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="<@wp.resourceURL ignoreTenant=true />static/css/ootb/page-templates/index.css" rel="stylesheet">
         <!-- Carbon Design System -->
         <@wp.fragment code="entando_ootb_carbon_include" escapeXml=false />
         <@wp.fragment code="keycloak_auth" escapeXml=false />
