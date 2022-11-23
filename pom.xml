@@ -570,16 +570,16 @@
                 <db.server.port>5432</db.server.port>
 
                 <portdb.database>${docker.db.database}</portdb.database>
-                <portdb.url>jdbc:postgresql://localhost:${db.server.port}/comando_tramissioni</portdb.url>
-                <portdb.username>agile</portdb.username>
-                <portdb.password>agile</portdb.password>
+                <portdb.url>jdbc:postgresql://${project.artifactId}-dbms:${db.server.port}/${portdb.database}</portdb.url>
+                <portdb.username>${docker.db.username}</portdb.username>
+                <portdb.password>${docker.db.password}</portdb.password>
                 <portdb.jndi>java:/jdbc/portDataSource</portdb.jndi>
                 <portdb.driverClassName>org.postgresql.Driver</portdb.driverClassName>
 
                 <servdb.database>${docker.db.database}</servdb.database>
-                <servdb.url>jdbc:postgresql://localhost:${db.server.port}/comando_tramissioni</servdb.url>
-                <servdb.username>agile</servdb.username>
-                <servdb.password>agile</servdb.password>
+                <servdb.url>jdbc:postgresql://${project.artifactId}-dbms:${db.server.port}/${servdb.database}</servdb.url>
+                <servdb.username>${docker.db.username}</servdb.username>
+                <servdb.password>${docker.db.password}</servdb.password>
                 <servdb.jndi>java:/jdbc/servDataSource</servdb.jndi>
                 <servdb.driverClassName>org.postgresql.Driver</servdb.driverClassName>
 
