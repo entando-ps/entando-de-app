@@ -5,8 +5,8 @@
     <groupId>org.entando.entando</groupId>
     <artifactId>entando-de-app</artifactId>
     <packaging>war</packaging>
-    <version>7.1.1</version>
-    <name>entando-de-app MT 7.1.1</name>
+    <version>7.1.3</version>
+    <name>entando-de-app MT 7.1.3</name>
     <url>http://www.entando.com/</url>
     <licenses>
         <license>
@@ -33,18 +33,18 @@
     </repositories>
     <properties>
         <!-- COMPONENTS -->
-        <entando-core-parent.version>7.1.0</entando-core-parent.version>
-        <entando-admin-console.version>7.1.1-MT</entando-admin-console.version>
-        <entando-engine.version>7.1.1-MT</entando-engine.version>
-        <entando-portal-ui.version>7.1.1-MT</entando-portal-ui.version>
-        <entando-keycloak-plugin.version>7.1.1-MT</entando-keycloak-plugin.version>
-        <entando-plugin-jacms.version>7.1.1-MT</entando-plugin-jacms.version>
-        <entando-plugin-jpmail.version>7.1.0</entando-plugin-jpmail.version>
-        <entando-plugin-jpredis.version>7.1.1-MT</entando-plugin-jpredis.version>
-        <entando-plugin-jpseo.version>7.1.1-MT</entando-plugin-jpseo.version>
-        <entando-plugin-jpversioning.version>7.1.0</entando-plugin-jpversioning.version>
-        <entando-plugin-jpsolr.version>7.1.1-MT</entando-plugin-jpsolr.version>
-        <entando-plugin-jpcds.version>7.1.1-MT</entando-plugin-jpcds.version>
+        <entando-core-parent.version>7.1.1</entando-core-parent.version>
+        <entando-engine.version>7.1.3-MT</entando-engine.version>
+        <entando-admin-console.version>7.1.3-MT</entando-admin-console.version>
+        <entando-portal-ui.version>7.1.3-MT</entando-portal-ui.version>
+        <entando-keycloak-plugin.version>7.1.3-MT</entando-keycloak-plugin.version>
+        <entando-plugin-jacms.version>7.1.3-MT</entando-plugin-jacms.version>
+        <entando-plugin-jpmail.version>7.1.1</entando-plugin-jpmail.version>
+        <entando-plugin-jpredis.version>7.1.3-MT</entando-plugin-jpredis.version>
+        <entando-plugin-jpseo.version>7.1.3-MT</entando-plugin-jpseo.version>
+        <entando-plugin-jpversioning.version>7.1.2</entando-plugin-jpversioning.version>
+        <entando-plugin-jpsolr.version>7.1.3-MT</entando-plugin-jpsolr.version>
+        <entando-plugin-jpcds.version>7.1.3-MT</entando-plugin-jpcds.version>
         
         <!-- SONAR -->
         <github.organization>entando</github.organization>
@@ -514,7 +514,7 @@
 
                 <skipServerImage>false</skipServerImage>
                 <jboss.home.in.image>/opt/eap</jboss.home.in.image>
-                <server.base.image>entando/entando-eap73-clustered-base:7.1.0</server.base.image>
+                <server.base.image>entando/entando-eap73-clustered-base:7.1.1</server.base.image>
 
                 <derby.base.folder>/entando-data/databases</derby.base.folder>
             </properties>
@@ -531,7 +531,7 @@
 
                 <skipServerImage>false</skipServerImage>
                 <jboss.home.in.image>/wildfly</jboss.home.in.image>
-                <server.base.image>entando/entando-wildfly17-base:7.1.0</server.base.image>
+                <server.base.image>entando/entando-wildfly17-base:7.1.1</server.base.image>
 
                 <derby.base.folder>/entando-data/databases</derby.base.folder>
             </properties>
