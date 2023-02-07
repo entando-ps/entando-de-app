@@ -1,4 +1,4 @@
-FROM entando/entando-base-tomcat:9-volumeless
+FROM entando/entando-base-tomcat:9
 #FROM entando/entando-base-tomcat:9
 #FROM entando/entando-base-tomcat:tomcat-9-comca-tracing
 
@@ -19,8 +19,8 @@ COPY --chown=185:0 tomcat-conf/server.xml /usr/local/tomcat/conf/server.xml
 COPY --chown=185:0 tomcat-conf/setenv.sh /usr/local/tomcat/bin/setenv.sh
 
 RUN sed -i "s|CONTEXT_PATH|$context_path|g" /usr/local/tomcat/conf/server.xml \
-#    && sed -i "s|CONTEXT_PATH|$context_path|g" /opt/entando-scripts/bin/entando-data.sh \
+    && sed -i "s|CONTEXT_PATH|$context_path|g" /opt/entando-scripts/bin/entando-data.sh \
     && chmod +x /usr/local/tomcat/bin/setenv.sh
-#    && chmod +x /opt/entando-scripts/bin/entando-data.sh
+    && chmod +x /opt/entando-scripts/bin/entando-data.sh
 
 USER 185
