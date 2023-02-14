@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<backup>
+	<date>2023-02-14 11:54:10</date>
+	<requiredTime>216</requiredTime>
+	<subfolder>20230214115410</subfolder>
+	<componentsHistory>
+		<component code="entando-engine" date="2023-02-14 11:40:43" status="OK">
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+				<datasource name="servDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="jacms" date="2023-02-14 11:40:45" status="OK">
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="jpmail" date="2023-02-14 11:40:46" status="OK">
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="entando-admin-console" date="2023-02-14 11:40:47" status="OK">
+			<liquibase status="OK">
+				<datasource name="servDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="entando-portal-ui" date="2023-02-14 11:40:47" status="OK">
+			<liquibase status="INIT" />
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="defaultResources" date="2023-02-14 11:40:47" status="OK">
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="jpversioning" date="2023-02-14 11:40:48" status="OK">
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="jpredis" date="2023-02-14 11:40:48" status="OK">
+			<liquibase status="INIT" />
+			<postProcess status="RESTORE" />
+		</component>
+		<component code="jpseo" date="2023-02-14 11:40:48" status="OK">
+			<liquibase status="OK">
+				<datasource name="portDataSource" status="OK" />
+			</liquibase>
+			<postProcess status="RESTORE" />
+		</component>
+	</componentsHistory>
+	<datasource name="portDataSource">
+		<table name="categories" requiredTime="3" rows="9" />
+		<table name="contentattributeroles" requiredTime="3" rows="41" />
+		<table name="contentmodels" requiredTime="3" rows="13" />
+		<table name="contentrelations" requiredTime="3" rows="81" />
+		<table name="contents" requiredTime="7" rows="41" />
+		<table name="contentsearch" requiredTime="4" rows="92" />
+		<table name="guifragment" requiredTime="25" rows="109" />
+		<table name="jpseo_friendlycode" requiredTime="2" rows="0" />
+		<table name="jpversioning_trashedresources" requiredTime="3" rows="0" />
+		<table name="jpversioning_versionedcontents" requiredTime="6" rows="0" />
+		<table name="localstrings" requiredTime="26" rows="490" />
+		<table name="pagemodels" requiredTime="5" rows="5" />
+		<table name="pages" requiredTime="3" rows="26" />
+		<table name="pages_metadata_draft" requiredTime="4" rows="26" />
+		<table name="pages_metadata_online" requiredTime="4" rows="26" />
+		<table name="resourcerelations" requiredTime="3" rows="0" />
+		<table name="resources" requiredTime="3" rows="17" />
+		<table name="sysconfig" requiredTime="11" rows="18" />
+		<table name="uniquekeys" requiredTime="2" rows="1" />
+		<table name="userpreferences" requiredTime="2" rows="0" />
+		<table name="widgetcatalog" requiredTime="6" rows="46" />
+		<table name="widgetconfig" requiredTime="3" rows="137" />
+		<table name="widgetconfig_draft" requiredTime="6" rows="137" />
+		<table name="workcontentattributeroles" requiredTime="3" rows="41" />
+		<table name="workcontentrelations" requiredTime="2" rows="20" />
+		<table name="workcontentsearch" requiredTime="3" rows="92" />
+	</datasource>
+	<datasource name="servDataSource">
+		<table name="actionlogcommentrecords" requiredTime="3" rows="0" />
+		<table name="actionloglikerecords" requiredTime="2" rows="0" />
+		<table name="actionlogrecords" requiredTime="4" rows="3" />
+		<table name="actionlogrelations" requiredTime="3" rows="3" />
+		<table name="api_oauth_consumers" requiredTime="3" rows="0" />
+		<table name="api_oauth_tokens" requiredTime="3" rows="1" />
+		<table name="apicatalog_methods" requiredTime="2" rows="0" />
+		<table name="apicatalog_services" requiredTime="2" rows="0" />
+		<table name="authgroups" requiredTime="5" rows="2" />
+		<table name="authpermissions" requiredTime="2" rows="10" />
+		<table name="authrolepermissions" requiredTime="2" rows="1" />
+		<table name="authroles" requiredTime="1" rows="1" />
+		<table name="authusergrouprole" requiredTime="2" rows="1" />
+		<table name="authuserprofileattrroles" requiredTime="4" rows="2" />
+		<table name="authuserprofiles" requiredTime="3" rows="1" />
+		<table name="authuserprofilesearch" requiredTime="3" rows="0" />
+		<table name="authusers" requiredTime="2" rows="1" />
+		<table name="authusershortcuts" requiredTime="4" rows="1" />
+	</datasource>
+</backup>
+
