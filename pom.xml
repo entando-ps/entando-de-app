@@ -573,6 +573,16 @@
             <artifactId>spring-session-data-redis</artifactId>
             <version>${spring-session-data-redis.version}</version>
         </dependency>
+        
+        
+        
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.5</version>
+        </dependency>
+        
+        
 
     </dependencies>
 
@@ -1194,6 +1204,14 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.2</version>
                 <configuration>
+                    
+                    <packagingExcludes>
+                        WEB-INF/lib/commons-fileupload-1.4.jar
+                    </packagingExcludes>
+                    <dependentWarExcludes>
+                        WEB-INF/lib/commons-fileupload-1.4.jar
+                    </dependentWarExcludes>
+                    
                     <!-- This is explicitly declared in project deps.-->
                     <webResources>
                         <resource>
